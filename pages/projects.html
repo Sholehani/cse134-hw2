@@ -3,8 +3,13 @@
     <head>
         <meta charset="utf-8" />
         <title>Projects</title>
-        <link href="\assest\images\myicon.ico" rel="icon"/>
+        <link href="\assets\images\myicon.ico" rel="icon"/>
     </head>
+    <style>
+        col {
+            background-color: beige;
+        }
+    </style>
 </html>
 
 <body>
@@ -22,7 +27,7 @@
     </header>
 
     <main>
-        <section id="projects-container" class="main-text">
+        <section id="projects-container" class="main-text" title="Completed Projects">
             <h1>Completed Projects 
                 <svg id="proj-svg" viewBox="0 0 200 200" width="40"  height="40" xmlns="http://www.w3.org/2000/svg">
                     <!-- Temporary svg design -->                             
@@ -49,7 +54,7 @@
 
             <br>
 
-            <table id="project-table" class="main-table">
+            <table id="project-table" class="main-table" title="Project List">
                 <caption> List of Completed Projects</caption>      <!--use css to put caption @ bottom-->
                 <thead>
                     <tr colspan="2"> <!--Table header--></tr>
@@ -57,11 +62,11 @@
                 <tbody>
 
                     <colgroup>
-                        <col span="1" style="background-color: beige;">
+                        <col span="1">
                     </colgroup>
                     
-                    <tr id="project-1">
-                        <td class="project-text"> 
+                    <tr id="project-1" title="Project 1">
+                        <td id="project-1-text" class="project-text" > 
                             <h2>Project 1</h2>
                             <details>    
                                 <summary>Click for more!</summary>
@@ -71,14 +76,14 @@
                         </td>
                         <td id="project-1-img">
                             <figure>
-                                <img class="project-img" src="\assest\images\project1.jpg" alt="Project 1 Image">
+                                <img class="project-img" src="\assets\images\project1.jpg" alt="Project 1 Image">
                                 <figcaption>Screen capture of <em>Battle X Armada</em> gameplay.</figcaption>
                             </figure>
                            
                         </td>
                     </tr>
-                    <tr id="project-2">
-                        <td class="project-text"> 
+                    <tr id="project-2" title="Project 2">
+                        <td id="project-2-text" class="project-text"> 
                             <h2>Project 2</h2>
                             <details>    
                                 <summary>Click for more!</summary>
@@ -87,29 +92,31 @@
                             <a href="https://github.com/cse110-sp23-group24/cse110-sp23-group24-Final-Project.git">Project 2</a>
                         </td>
                         <td id="project-2-video">
-                            <iframe id="project-2-iframe" width="560" height="315" src="https://www.youtube.com/embed/VRxmk8on6fA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <video id="project-2-vid" controls width="560" height="315" src="assets/videos/project1.mp4" title="YouTube video player" type="video/webm" allowfullscreen >
                         </td>
                     </tr>
                 </tbody>
             </table>  
         </section>
 
-        <section id="curernt-projects" class="user-content">
+        <section id="curernt-projects" class="user-content" title="Current Projects">
             <h2>Current Projects</h2>
             <p>[Text on Current Projects]</p>
             <br>
-            <form id="curr-proj-form">
+            <form id="curr-proj-form" title="Project Update">
                 <h3>Keep Updated!</h3>
-                <div class="form-data">
-                    <label for="email">Email: </label><br>
+                <div id="project-update" class="form-data" title="Email Subscription">
+                    <label for="email" title="Project Update Email"> Email: </label><br>
                     <input id="email" name="email" type="email" required>
                 </div>
 
-                <div class="form-button">
-                    <input type="submit" value="Subscribe!">
+                <div class="form-button" >
+                    <input title="Subscribe!" type="submit" value="Subscribe!" >
                 </div>
             </form>
         </section>
+
+        
     </main>
 
     <footer >

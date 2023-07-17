@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Thoughts</title>
-        <link href="\assest\images\myicon.ico" rel="icon"/>
+        <link href="\assets\images\myicon.ico" rel="icon"/>
     </head>
 </html>
 
@@ -40,9 +40,9 @@
             <p>[More Text for Quotes]</p>
             
             <figure>
-                <figcaption class="quote">"Extreme programming is an emotional experience."</figcaption>
+                <figcaption class="quote"><i>"Extreme programming is an emotional experience."</i></figcaption>
 
-                <audio controls src="\assest\audio\quoteAudio.mp3">
+                <audio controls src="\assets\audio\quoteAudio.mp3">
                 </audio>
             </figure>
             
@@ -61,41 +61,14 @@
         <section id="current-thoughts" class="main-text">
             <h2>Current Thoughts</h2>
             <p>[Text for Current Thoughts]</p>
+            
+            <figure>    
+                <figcaption> My Thoughts on Users.</figcaption>
+                <a href="/pages/users.html">Users!</a>
+            </figure>
         </section>
 
-        <template>
-        <section id="user-ideas" class="user-content">
-            <h2>User Ideas</h2>
-            <form action="">
-                <fieldset id="ideas-fieldset" class="user-input">
-                    <legend>What is your favorite color? </legend>
-
-                    <input id="red" type="radio">
-                    <label for="red">Red</label><br>
-
-                    <input id="blue" type="radio">
-                    <label for="blue">Blue</label><br>
-
-                    <input id="green" type="radio">
-                    <label for="green">Green</label><br>
-
-                    <input id="yellow" type="radio">
-                    <label for="yellow">Yellow</label><br>
-
-                    <input id="other-color" type="radio">
-                    <label for="other-color">Other</label><br>
-                </fieldset>
-
-                <label for="project-selected">Choose a Project You Liked:</label>
-                <input list="project-list" id="project-selected" name="project-selected">
-
-                <datalist id="project-list">
-                    <option class="project-option" value="Project 1"></option>
-                    <option class="project-option" value="Project 2"></option>
-                </datalist>
-            </form>
-        </section>
-        </template>
+        
 
 
     </main>
