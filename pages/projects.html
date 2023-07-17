@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Projects</title>
+        <link href="\assest\images\myicon.ico" rel="icon"/>
+    </head>
+</html>
+
+<body>
+    <header>
+        <h1>
+            Sholehani Hafezi
+        </h1>
+
+        <section id="nav-bar">
+            <a id="home" href="\index.html">Home</a>
+            <a id="projects" href="projects.html">Projects</a>
+            <a id="about" href="about.html">About Me</a>
+            <a id="thoughts" href="thoughts.html">Thoughts</a>
+        </section>
+    </header>
+
+    <main>
+        <section id="projects-container" class="main-text">
+            <h1>Completed Projects 
+                <svg id="proj-svg" viewBox="0 0 200 200" width="40"  height="40" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Temporary svg design -->                             
+                    <circle cx="100" cy="100" fill="white" r="78" stroke="black" stroke-width="3"/>
+                    <g class="eyes">
+                        <circle cx="65" cy="82" r="12"/>
+                        <circle cx="127" cy="82" r="12"/>
+                    </g>
+                <path d="m136.81 116.53c.69 26.17-64.11 42-81.52-.73" style="fill:none; stroke: black; stroke-width: 3;"/>
+                </svg>
+            </h1>
+            
+
+            <label id="proj-sel-label"><b>Select a Project</b></label>
+            <select id="project-year-select" onchange="">
+                <optgroup class="project-optgroup"label="2021">
+                    <option class="project-option" value="project-1">Project 1</option>
+                </optgroup>
+                <optgroup class="project-optgroup"label="2023">
+                    <option class="project-option" value="project-2">Project 2</option>
+                </optgroup>
+            </select>
+                
+
+            <br>
+
+            <table id="project-table" class="main-table">
+                <caption> List of Completed Projects</caption>      <!--use css to put caption @ bottom-->
+                <thead>
+                    <tr colspan="2"> <!--Table header--></tr>
+                </thead>
+                <tbody>
+
+                    <colgroup>
+                        <col span="1" style="background-color: beige;">
+                    </colgroup>
+                    
+                    <tr id="project-1">
+                        <td class="project-text"> 
+                            <h2>Project 1</h2>
+                            <details>    
+                                <summary>Click for more!</summary>
+                                [Text About Project 1]
+                            </details>
+                            <a href="https://github.com/MiramarCISC/CISC191-SPRING2021-B.git">Project 1</a>
+                        </td>
+                        <td id="project-1-img">
+                            <figure>
+                                <img class="project-img" src="\assest\images\project1.jpg" alt="Project 1 Image">
+                                <figcaption>Screen capture of <em>Battle X Armada</em> gameplay.</figcaption>
+                            </figure>
+                           
+                        </td>
+                    </tr>
+                    <tr id="project-2">
+                        <td class="project-text"> 
+                            <h2>Project 2</h2>
+                            <details>    
+                                <summary>Click for more!</summary>
+                                [Text About Project 2]
+                            </details>
+                            <a href="https://github.com/cse110-sp23-group24/cse110-sp23-group24-Final-Project.git">Project 2</a>
+                        </td>
+                        <td id="project-2-video">
+                            <iframe id="project-2-iframe" width="560" height="315" src="https://www.youtube.com/embed/VRxmk8on6fA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>  
+        </section>
+
+        <section id="curernt-projects" class="user-content">
+            <h2>Current Projects</h2>
+            <p>[Text on Current Projects]</p>
+            <br>
+            <form id="curr-proj-form">
+                <h3>Keep Updated!</h3>
+                <div class="form-data">
+                    <label for="email">Email: </label><br>
+                    <input id="email" name="email" type="email" required>
+                </div>
+
+                <div class="form-button">
+                    <input type="submit" value="Subscribe!">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer >
+        <h3>Contact</h3>
+        <p>Email: 10mariashol15@gmail.com</p>
+        <div id="footer-social" class="socials">
+            <a id="intagram" class="socials" href="\index.html">Intagram</a>
+            <a id="github" class="socials" href="\index.html">GitHub</a>
+        </div>
+        <a id="site-info" href="\index.html">About this site</a>
+
+    </footer>
+
+</body>

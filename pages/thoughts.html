@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Thoughts</title>
+        <link href="\assest\images\myicon.ico" rel="icon"/>
+    </head>
+</html>
+
+<body>
+    <header>
+        <h1>
+            Sholehani Hafezi
+        </h1>
+
+        <section id="nav-bar">
+            <a id="home" href="\index.html">Home</a>
+            <a id="projects" href="projects.html">Projects</a>
+            <a id="about" href="about.html">About Me</a>
+            <a id="thoughts" href="thoughts.html">Thoughts</a>
+        </section>
+    </header>
+
+    <main>
+        <section id="thoughts-start" class="main-text">
+            <h1>Current Thoughts</h1>
+            <nav class="thoughts-menu">
+                <ul>
+                    <li><a href="#quotes">Quotes  </a></li>
+                    <li><a href="#current-thoughts">Current thoughts</a></li>
+                </ul>
+            </nav>  
+            <p></p>
+        </section>
+
+        <section id="quotes-sec" class="main-text">
+            <h2>Quotes</h2>
+            <p>[Text for Quotes & ]</p>
+            <aside><p class="quote">"[Some Quote]"</p></aside>
+            <p>[More Text for Quotes]</p>
+            
+            <figure>
+                <figcaption class="quote">"Extreme programming is an emotional experience."</figcaption>
+
+                <audio controls src="\assest\audio\quoteAudio.mp3">
+                </audio>
+            </figure>
+            
+            <br>
+
+            <div id="share-quote" class="user-content">
+                <label for="user-quote">Share a Quote!</label>
+                <textarea id="user-quote" name="user-quote" rows="7" cols="40"></textarea>
+            </div>
+        </section>
+
+        <canvas id="thoughts-canvas" width="1200" height="120">
+            Fancy Border Logo.
+        </canvas>
+
+        <section id="current-thoughts" class="main-text">
+            <h2>Current Thoughts</h2>
+            <p>[Text for Current Thoughts]</p>
+        </section>
+
+        <template>
+        <section id="user-ideas" class="user-content">
+            <h2>User Ideas</h2>
+            <form action="">
+                <fieldset id="ideas-fieldset" class="user-input">
+                    <legend>What is your favorite color? </legend>
+
+                    <input id="red" type="radio">
+                    <label for="red">Red</label><br>
+
+                    <input id="blue" type="radio">
+                    <label for="blue">Blue</label><br>
+
+                    <input id="green" type="radio">
+                    <label for="green">Green</label><br>
+
+                    <input id="yellow" type="radio">
+                    <label for="yellow">Yellow</label><br>
+
+                    <input id="other-color" type="radio">
+                    <label for="other-color">Other</label><br>
+                </fieldset>
+
+                <label for="project-selected">Choose a Project You Liked:</label>
+                <input list="project-list" id="project-selected" name="project-selected">
+
+                <datalist id="project-list">
+                    <option class="project-option" value="Project 1"></option>
+                    <option class="project-option" value="Project 2"></option>
+                </datalist>
+            </form>
+        </section>
+        </template>
+
+
+    </main>
+
+    <script>
+        const thoughtCav = document.querySelector("canvas");
+        const cavImg = thoughtCav.getContext("2d"); 
+
+        // Temporary canvas image
+        cavImg.fillStyle = "gray";
+        cavImg.fillRect(100, 60, 1500, 10);
+    </script>
+
+    <footer >
+        <h3>Contact</h3>
+        <p>Email: 10mariashol15@gmail.com</p>
+        <div id="footer-social" class="socials">
+            <a id="instagram" class="socials" href="\index.html">Instagram</a>
+            <a id="github" class="socials" href="\index.html">GitHub</a>
+        </div>
+        <a id="site-info" href="\index.html">About this site</a>
+
+    </footer>
+    
+</body>
