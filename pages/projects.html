@@ -92,12 +92,20 @@
                             <a href="https://github.com/cse110-sp23-group24/cse110-sp23-group24-Final-Project.git">Project 2</a>
                         </td>
                         <td id="project-2-video">
-                            <video id="project-2-vid" controls width="560" height="315" src="assets/videos/project1.mp4" title="YouTube video player" type="video/webm" allowfullscreen >
+                            <figure>
+                                <!-- Use id to modify in script -->
+                                <figcaption>Video Demonstrating <span id="project-title" style="color:purple">Future Now!</span></figcaption>
+                                <video id="project-2-vid" controls width="560" height="315"  title="YouTube video player"  >
+                                    <source src="/assets/videos/project1.mp4" type="video/webm" allowfullscreen>
+                                </video>
+                            </figure>
                         </td>
                     </tr>
                 </tbody>
             </table>  
         </section>
+
+        <hr>
 
         <section id="curernt-projects" class="user-content" title="Current Projects">
             <h2>Current Projects</h2>
@@ -110,8 +118,13 @@
                     <input id="email" name="email" type="email" required>
                 </div>
 
-                <div class="form-button" >
+                <div id="curr-proj-button" class="form-button" >
                     <input title="Subscribe!" type="submit" value="Subscribe!" >
+
+                    <!-- Add script to make template appear after button input -->
+                    <template class="sub-text">
+                        <h3><strong>You Have Subscribed!</strong></h3>
+                    </template>
                 </div>
             </form>
         </section>
@@ -119,10 +132,10 @@
         
     </main>
 
-    <footer >
-        <h3>Contact</h3>
+    <footer class="sub-text" title="Contact & More">
+        <h3 title="Contact">Contact</h3>
         <p>Email: 10mariashol15@gmail.com</p>
-        <div id="footer-social" class="socials">
+        <div id="footer-social" class="socials" title="Socials">
             <a id="intagram" class="socials" href="\index.html">Intagram</a>
             <a id="github" class="socials" href="\index.html">GitHub</a>
         </div>
