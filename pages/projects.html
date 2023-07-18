@@ -19,18 +19,18 @@
             Sholehani Hafezi
         </h1>
 
-        <section id="nav-bar">
-            <a id="home" href="\index.html">Home</a>
+        <div id="nav-bar">
+            <a id="home" href="/index.html">Home</a>
             <a id="projects" href="projects.html">Projects</a>
             <a id="about" href="about.html">About Me</a>
             <a id="thoughts" href="thoughts.html">Thoughts</a>
-            <a id="resume" class="nav-link" title="Resume" download href="/assets\files\resume.pdf">Resume</a>
-        </section>
+            <a id="resume" class="nav-link" title="Resume" download href="/assets/files/resume.pdf">Resume</a>
+        </div>
     </header>
 
     <main>
         <section id="projects-container" class="main-text" title="Completed Projects">
-            <h1>Completed Projects 
+            <h2>Completed Projects</h2>
                 <svg id="proj-svg" viewBox="0 0 200 200" width="40"  height="40" xmlns="http://www.w3.org/2000/svg">
                     <!-- Temporary svg design -->                             
                     <circle cx="100" cy="100" fill="white" r="78" stroke="black" stroke-width="3"/>
@@ -45,10 +45,10 @@
 
             <label id="proj-sel-label"><b>Select a Project</b></label>
             <select id="project-year-select" onchange="">
-                <optgroup class="project-optgroup"label="2021">
+                <optgroup class="project-optgroup" label="2021">
                     <option class="project-option" value="project-1">Project 1</option>
                 </optgroup>
-                <optgroup class="project-optgroup"label="2023">
+                <optgroup class="project-optgroup" label="2023">
                     <option class="project-option" value="project-2">Project 2</option>
                 </optgroup>
             </select>
@@ -59,7 +59,9 @@
             <table id="project-table" class="main-table" title="Project List">
                 <caption> List of Completed Projects</caption>      <!--use css to put caption @ bottom-->
                 <thead>
-                    <tr colspan="2"> <!--Table header--></tr>
+                    <tr>
+                        <th id="project-header">Projects</th>
+                    </tr>
                 </thead>
                 <tbody>
 
@@ -71,7 +73,7 @@
                         <td id="project-1-text" class="project-text" > 
                             <h2>Project 1</h2>
                             <details>    
-                                <summary>Click for more!</summary>
+                                <summary class="proj-summary">Click for more!</summary>
                                 [Text About Project 1]
                             </details>
                             <a href="https://github.com/MiramarCISC/CISC191-SPRING2021-B.git">Project 1</a>
@@ -88,18 +90,17 @@
                         <td id="project-2-text" class="project-text"> 
                             <h2>Project 2</h2>
                             <details>    
-                                <summary>Click for more!</summary>
+                                <summary class="proj-summary">Click for more!</summary>
                                 [Text About Project 2]
                             </details>
                             <a href="https://github.com/cse110-sp23-group24/cse110-sp23-group24-Final-Project.git">Project 2</a>
                         </td>
                         <td id="project-2-video">
-                            <figure>
-                                <!-- Use id to modify in script -->
-                                <figcaption>Video Demonstrating <span id="project-title" style="color:purple">Future Now!</span></figcaption>
+                                <!-- Use id to modify in script -->   
                                 <video id="project-2-vid" controls width="560" height="315"  title="YouTube video player"  >
-                                    <source src="/assets/videos/project1.mp4" type="video/webm" allowfullscreen>
+                                    <source src="/assets/videos/project1.mp4" type="video/webm">
                                 </video>
+                                <p class="proj-p">Video Demonstrating <span id="project-title" style="color:purple">Future Now!</span></p>
                             </figure>
                         </td>
                     </tr>
@@ -138,8 +139,8 @@
         <h3 title="Contact">Contact</h3>
         <p>Email: 10mariashol15@gmail.com</p>
         <div id="footer-social" class="socials" title="Socials">
-            <a id="instagram" class="socials" title="Instagram" href="\index.html">Instagram</a>
-            <a id="github" class="socials" title="GitHub" href="\index.html">GitHub</a>
+            <a id="instagram" class="socials" title="Instagram" href="/index.html">Instagram</a>
+            <a id="github" class="socials" title="GitHub" href="/index.html">GitHub</a>
         </div>
     </footer>
 
