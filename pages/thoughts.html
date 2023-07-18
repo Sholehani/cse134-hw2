@@ -22,24 +22,24 @@
     </header>
 
     <main>
-        <section id="thoughts-start" class="main-text">
+        <section id="thoughts-start" class="main-text" title="My Thoughts">
             <h2>My Thoughts</h2>
             <nav class="thoughts-menu">
                 <ul>
-                    <li><a href="#quotes">Quotes  </a></li>
-                    <li><a href="#current-thoughts">Current thoughts</a></li>
+                    <li><a href="#quotes" title="Quotes Navigation">Quotes  </a></li>
+                    <li><a href="#current-thoughts" title="Current Thoughts Navigation">Current Thoughts</a></li>
                 </ul>
             </nav>  
             <p></p>
         </section>
 
-        <section id="quotes-sec" class="main-text">
+        <section id="quotes-sec" class="main-text" title="Quotes">
             <h2>Quotes</h2>
             <p>[Text for Quotes]</p>
             <aside><p class="quote">"[Some Quote]"</p></aside>
-            <p>[More Text for Quotes]</p>
+            <p class="quote">[More Text for Quotes]</p>
             
-            <figure>
+            <figure id="quote-audio" title="Quote Audio">
                 <figcaption class="quote"><i>"Extreme programming is an emotional experience."</i></figcaption>
 
                 <audio controls src="/assets/audio/quoteAudio.mp3">
@@ -48,23 +48,23 @@
             
             <br>
 
-            <div id="share-quote" class="user-content">
+            <div id="share-quote" class="user-content" title="Share a Quote">
                 <label for="user-quote">Share a Quote!</label>
                 <textarea id="user-quote" name="user-quote" rows="7" cols="40"></textarea>
             </div>
         </section>
 
-        <canvas id="thoughts-canvas" width="1200" height="120">
+        <canvas id="thoughts-canvas" width="1200" height="120" title="Fancy Border">
             Fancy Border Logo.
         </canvas>
 
-        <section id="current-thoughts" class="main-text">
+        <section id="current-thoughts" class="main-text" title="Current Thoughts">
             <h2>Current Thoughts</h2>
             <p>[Text for Current Thoughts] When people see the <code>div</code> tag, the phenomenon <i>"div-itus"</i> ... </p>
             
-            <figure>    
+            <figure id="user-link" class="link-figure">    
                 <figcaption> My Thoughts on Users.</figcaption>
-                <a href="/pages/users.html">Users!</a>
+                <a href="/pages/users.html" title="Users">Users!</a>
             </figure>
         </section>
 
@@ -82,14 +82,14 @@
         cavImg.fillRect(100, 60, 1500, 10);
     </script>
 
-    <footer class="sub-text" title="Contact & More">
-        <h3 title="Contact">Contact</h3>
-        <p>Email: 10mariashol15@gmail.com</p>
-        <div id="footer-social" class="socials" title="Socials">
+    <footer class="sub-text" title="Contact">
+        <h3>Contact</h3>
+        <p title="Email">Email: 10mariashol15@gmail.com</p>
+        <div id="footer-social" class="socials">
             <a id="instagram" class="socials" title="Instagram" href="/index.html">Instagram</a>
             <a id="github" class="socials" title="GitHub" href="/index.html">GitHub</a>
         </div>
-    </footer>
+    </footer>   
 
 </body>
 </html>
